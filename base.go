@@ -40,6 +40,7 @@ func (code ErrorCode) GetDetail() ErrorCodeDetail {
 		// TODO: ep
 		break
 	case "live":
+		// 尝试匹配直播
 		result = getLiveSiteDetail(code)
 		if result.Message != "" {
 			return result

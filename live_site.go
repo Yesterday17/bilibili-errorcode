@@ -1,6 +1,8 @@
 package bilierrorcode
 
+// 直播 号段 [1000000, 1999999]
 // TODO: 检查修复 Description 中的错字错意
+// TODO: 补充对应条目的 Description
 func getLiveSiteDetail(code ErrorCode) ErrorCodeDetail {
 	result := ErrorCodeDetail{
 		Code:        code,
