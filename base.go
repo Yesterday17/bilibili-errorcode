@@ -12,7 +12,11 @@ type ErrorCodeDetail struct {
 
 // GetRegion Get which part your error code is
 func (code ErrorCode) GetRegion() string {
-	if code >= 0 && code <= 990000 {
+	if code < 0 {
+		return "common"
+	} else if code == 0 {
+		return "ok"
+	} else if code > 0 && code <= 990000 {
 		return "main_or_ep"
 	} else if code >= 1000000 && code <= 1999999 {
 		return "live"
@@ -31,6 +35,19 @@ func (code ErrorCode) GetDetail() ErrorCodeDetail {
 	var result ErrorCodeDetail
 
 	switch code.GetRegion() {
+	case "ok":
+		return ErrorCodeDetail{
+			Code:        0,
+			Message:     "OK",
+			Description: "无错误",
+		}
+	case "common":
+		// 尝试匹配通用错误代码
+		result = getCommonCodeDetail(code)
+		if result.Message != "" {
+			return result
+		}
+		break
 	case "main_or_ep":
 		// 尝试匹配主站
 		result = getMainSiteDetail(code)
