@@ -55,6 +55,7 @@ func (code ErrorCode) GetDetail() ErrorCodeDetail {
 			return result
 		}
 		// TODO: ep
+		// FIXME: ep 实用性待定 有用再加
 		break
 	case "live":
 		// 尝试匹配直播
@@ -64,7 +65,7 @@ func (code ErrorCode) GetDetail() ErrorCodeDetail {
 		}
 		break
 	case "bbq":
-		// result = getBBQSiteDetail(code)
+		result = getBBQCodeDetail(code)
 		if result.Message != "" {
 			return result
 		}
