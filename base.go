@@ -19,7 +19,7 @@ func (code ErrorCode) GetRegion() string {
 	} else if code >= 5000000 && code < 6000000 {
 		return "bbq"
 	} else if code >= 2000000 && code <= 2099999 {
-		return "ticket"
+		return "ticket_or_open_platform"
 	} else if code >= 2000000 && code <= 2999999 {
 		return "open_platform"
 	}
@@ -52,19 +52,14 @@ func (code ErrorCode) GetDetail() ErrorCodeDetail {
 			return result
 		}
 		break
-	case "ticket":
-		// result = getTicketSiteDetail(code)
-		if result.Message != "" {
-			return result
-		}
-		break
+	case "ticket_or_open_platform":
 	case "open_platform":
-		// result = getOpenPlatformDetail(code)
+		// 尝试匹配开放平台
+		result = getOpenPlatformSiteDetail(code)
 		if result.Message != "" {
 			return result
 		}
 		break
-
 	}
 
 	// 默认情况 返回空
