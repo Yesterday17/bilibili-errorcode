@@ -23,3 +23,14 @@ To:
 ```
 case $2:\nresult.Message = "$1"\nresult.Description = "$3"\nbreak
 ```
+
+### [#1](https://github.com/Yesterday17/bilibili-errorcode/issues/1)
+From:
+```
+  public static final int ([^ ]+) = (-?\d+);
+```
+
+To:
+```
+case $2:\nresult.Message = "$1"\nresult.Description = ""\nbreak
+```

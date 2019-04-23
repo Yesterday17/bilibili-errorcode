@@ -4464,87 +4464,87 @@ func getMainSiteDetail(code ErrorCode) ErrorCodeDetail {
 			break
 		case 75036:
 			result.Message = "ActivityLikeLevelLimit"
-			result.Description = "-用户等级不够!"
+			result.Description = "用户等级不够!"
 			break
 		case 75037:
 			result.Message = "ActivityLikeMemberLimit"
-			result.Description = "-用户注册不足7天！"
+			result.Description = "用户注册不足7天！"
 			break
 		case 75038:
 			result.Message = "ActivityLikeNotStart"
-			result.Description = "-评分未开始!"
+			result.Description = "评分未开始!"
 			break
 		case 75039:
 			result.Message = "ActivityLikeHasEnd"
-			result.Description = "-评分已结束!"
+			result.Description = "评分已结束!"
 			break
 		case 75040:
 			result.Message = "ActivityLikeHasLike"
-			result.Description = "-已点赞过!"
+			result.Description = "已点赞过!"
 			break
 		case 75041:
 			result.Message = "ActivityLikeHasGrade"
-			result.Description = "-已评过分!"
+			result.Description = "已评过分!"
 			break
 		case 75042:
 			result.Message = "ActivityLikeRegisterLimit"
-			result.Description = "-晚于活动限制注册时间!"
+			result.Description = "晚于活动限制注册时间!"
 			break
 		case 75043:
 			result.Message = "ActivityLikeHasVote"
-			result.Description = "-已投过票!"
+			result.Description = "已投过票!"
 			break
 		case 75044:
 			result.Message = "ActivityHasOffLine"
-			result.Description = "-活动已经下线"
+			result.Description = "活动已经下线"
 			break
 		case 75045:
 			result.Message = "ActivityLikeHasOffLine"
-			result.Description = "-活动稿件已经下线"
+			result.Description = "活动稿件已经下线"
 			break
 		case 75046:
 			result.Message = "ActivityLikeBeforeRegister"
-			result.Description = "-早于活动限制注册时间!"
+			result.Description = "早于活动限制注册时间!"
 			break
 		case 75047:
 			result.Message = "ActivityHasMissionGroup"
-			result.Description = "-已发起过活动!"
+			result.Description = "已发起过活动!"
 			break
 		case 75048:
 			result.Message = "ActivityMGNotYourself"
-			result.Description = "-不支持给自己助力哦!"
+			result.Description = "不支持给自己助力哦!"
 			break
 		case 75049:
 			result.Message = "ActivityMissionNotStart"
-			result.Description = "-助攻未开始!"
+			result.Description = "助攻未开始!"
 			break
 		case 75050:
 			result.Message = "ActivityMissionHasEnd"
-			result.Description = "-助攻已结束!"
+			result.Description = "助攻已结束!"
 			break
 		case 75051:
 			result.Message = "ActivityHasMission"
-			result.Description = "-已助攻过!"
+			result.Description = "已助攻过!"
 			break
 		case 75052:
 			result.Message = "ActivityOverMissionLimit"
-			result.Description = "-超出可助攻上限!"
+			result.Description = "超出可助攻上限!"
 			break
 		case 75053:
 			result.Message = "ActivityHasAward"
-			result.Description = "-重复领取"
+			result.Description = "重复领取"
 			break
 		case 75054:
 			result.Message = "ActivityNotAward"
-			result.Description = "-非法领取"
+			result.Description = "非法领取"
 			break
 		case 75055:
 			result.Message = "ActivityTelValid"
-			result.Description = "-未绑定有效手机号码"
+			result.Description = "未绑定有效手机号码"
 			break
 		case 75056:
 			result.Message = "ActivityOverDailyScore"
-			result.Description = "-超过单日投票上线"
+			result.Description = "超过单日投票上线"
 			break
 		case 75057:
 			result.Message = "ActivityBnjTimeCancel"
@@ -4580,23 +4580,23 @@ func getMainSiteDetail(code ErrorCode) ErrorCodeDetail {
 			break
 		case 75065:
 			result.Message = "ActivityMemberBlocked"
-			result.Description = "-封禁用户无法操作"
+			result.Description = "封禁用户无法操作"
 			break
 		case 75066:
 			result.Message = "ActivityKfcHasUsed"
-			result.Description = "-code已经被使用"
+			result.Description = "code已经被使用"
 			break
 		case 75067:
 			result.Message = "ActivityKfcNotExist"
-			result.Description = "-code不存在"
+			result.Description = "code不存在"
 			break
 		case 75068:
 			result.Message = "ActivityKfcNotGiveOut"
-			result.Description = "-code未发放"
+			result.Description = "code未发放"
 			break
 		case 75069:
 			result.Message = "ActivityKfcSqlError"
-			result.Description = "-发生未知错误"
+			result.Description = "发生未知错误"
 			break
 
 		// TV
