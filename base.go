@@ -5,9 +5,9 @@ type ErrorCode int32
 
 // ErrorCodeDetail Detailed information
 type ErrorCodeDetail struct {
-	Code        ErrorCode
-	Message     string
-	Description string
+	Code        ErrorCode `json:"code"`
+	Message     string    `json:"raw"`
+	Description string    `json:"message"`
 }
 
 // GetRegion Get which part your error code is

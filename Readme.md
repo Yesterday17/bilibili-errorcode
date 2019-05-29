@@ -1,9 +1,9 @@
-bilibili-errorcode
-===
+# bilibili-errorcode
 
-基于`[来源请求]``[数据删除]`得到的`[数据删除]`站的错误代码对应表。
+基于`[来源请求][数据删除]`得到的`[数据删除]`站的错误代码对应表。
 
 ## Get Started
+
 ```go
 package example
 
@@ -23,4 +23,5 @@ func main() {
 ```
 
 ## LICENSE
+
 [MIT](LICENSE)
